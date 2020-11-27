@@ -55,6 +55,6 @@ def telegram_scr(request):
             return HttpResponse('<h2>Telegram bot</h2>')
         s  = sendd_photo(chat_id)
         print('chat_id', chat_id)
-        print(s)
+        print(s['result']['chat']['first_name'])
 
     return  HttpResponse ('<h2>Telegram bot</h2>')
